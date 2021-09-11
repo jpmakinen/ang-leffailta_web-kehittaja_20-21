@@ -8,13 +8,13 @@ toimiva sovellus löytyy osoitteesta: <https://ang-leffailta-99e2b.web.app/>
 Lyhyehkö kuvaus eri teknologioiden käyttämisestä työssä
 Komennot, joilla kehitysversion saa Githubista omalle koneelle toimimaan
 
-Angular-sovellussuunnittelukehys: 
+### Angular-sovellussuunnittelukehys: 
 Toimii kehitysalustana tehokkaiden ja kehittyneiden yksisivuisten sovellusten luomiseen.
 
-Bootstrap 5.0: 
+### Bootstrap 5.0: 
 Kehys responsiivisten pääasiassa mobiili-sivustojen rakentamiseen. 
 
-Firebase:
+### Firebase:
 Googlen tukema sovellusten kehittämisohjelmisto, jonka avulla kehittäjät voivat kehittää sovelluksia eri alustoille 
 esim. Android tai iOS.
 
