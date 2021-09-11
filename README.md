@@ -2,7 +2,7 @@
 
 Leffailta-sovellus, jolla tunnistautunut käyttäjä voi kirjoittaa elokuvien arvosteluita. Tehdyt arvostelut tallennetaan tietokantaan. Tehtyjä arvosteluja voi muuttaa tai poistaa kannasta. Tunnistautuminen tapahtuu joko tunnuksilla, jotka luodaan erikseen tai Google-tunnuksilla. Sovellus hakee jokaiselle tehdylle arvostelulle sattumavaraisen kuvan kannasta. Etusivulle tulostuu arvioinnit elokuvista kuvan lisäksi. Etusivu on nähtävillä ilman tunnistautumista.
 
-toimiva sovellus löytyy osoitteesta: <https://ang-leffailta-99e2b.web.app/>
+Toimiva sovellus löytyy osoitteesta: <https://ang-leffailta-99e2b.web.app/>
 
 Kuvat, joita projektissa on käytetty, ovat kaikki "Pixabay License"-lisenssin alla.
 <https://pixabay.com/service/license/>
