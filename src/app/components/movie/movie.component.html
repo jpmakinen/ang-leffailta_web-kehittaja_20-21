@@ -1,0 +1,24 @@
+<!--
+  Lomakkeen pohjana Bootstrap-malli, jota muokattu projektiin sopivaksi.
+ *ngFor saadaan kaikki tehdyt arvostelut ulos tietokannasta.
+-->
+
+<body>
+  <div class="row row-cols-1 row-cols-md-1 g-4">
+    <div class="row">
+      <div class="card h-70" *ngFor="let review of Reviews; let i = index">
+        <img src="{{ imageUploads[i].url }}" class="card-img-top" />
+        <div class="card-body"></div>
+        <h5 class="card-title">{{ review.movieName }}</h5>
+        <p>
+          tekijä: <span>{{ review.userName }}</span>
+        </p>
+        <a
+          routerLink="../list-review"
+          class="stretched-link"
+          *ngIf="this.authService.isLoggedIn"
+        ></a>
+      </div>
+    </div>
+  </div>
+</body>

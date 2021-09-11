@@ -1,0 +1,60 @@
+<!--Bootstrapia apuna käyttäen luotu ulkoasu kirjautumiskomponentille-->
+
+<link href="sign-in.component.css" rel="stylesheet" />
+
+<body class="text-center">
+  <main class="form-signin">
+    <h1 class="h3 mb-3 fw-normal">Kirjaudu sisään</h1>
+    <div class="form-floating">
+      <input
+        type="text"
+        class="form-control"
+        placeholder="sähköposti"
+        #username
+        required
+      />
+      <label for="floatingInput">sähköposti</label>
+    </div>
+    <div class="form-floating">
+      <input
+        type="password"
+        class="form-control"
+        placeholder="salasana"
+        #password
+        required
+      />
+      <label for="floatingInput">salasana</label>
+    </div>
+
+    <button
+      class="w-50 btn btn-lg btn-primary"
+      (click)="authService.signIn(username.value, password.value)"
+    >
+      Kirjaudu</button
+    >&nbsp;
+    <div class="row">
+      <div class="col-md-3">
+        <a
+          class="btn btn-outline-dark"
+          (click)="authService.GoogleAuth()"
+          role="button"
+          style="text-transform: none"
+        >
+          <img
+            width="20px"
+            style="margin-bottom: 3px; margin-right: 5px"
+            alt="Google sign-in"
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Google_%22G%22_Logo.svg/512px-Google_%22G%22_Logo.svg.png"
+          />
+          Kirjaudu Google-tunnuksilla
+        </a>
+      </div>
+    </div>
+    <div>
+      <p class="quest-text">
+        Ei ole tiliä? <a routerLink="/sign-up">Rekisteröidy</a>
+      </p>
+      <p class="mt-5 mb-3 text-muted">&copy; 2020–2021</p>
+    </div>
+  </main>
+</body>

@@ -1,0 +1,97 @@
+/*
+Muokkaa-sivun lomakkeen ulkoasu. Lähteinä käytetty Bootstrap-sivustoa ja W3school-tutoriaaleja.
+*/
+
+.contact {
+  padding-top: 2rem;
+}
+.col-md-1 {
+  background: rgb(183, 65, 14);
+  padding: 4%;
+  border-top-left-radius: 0.5rem;
+  border-bottom-left-radius: 0.5rem;
+}
+
+.col-md-9 {
+  background: ivory;
+  padding: 3%;
+  border-top-right-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem;
+}
+.contact-form label {
+  font-weight: 600;
+}
+.contact-form button {
+  margin-top: 5px;
+  background: wheat;
+  color: rgb(40, 40, 40);
+  border-color: rgb(40, 40, 40);
+  font-weight: 600;
+  width: 25%;
+}
+
+.contact-form button:hover {
+  background-color: rgb(40, 40, 40);
+  color: ivory;
+  border-color: rgb(40, 40, 40);
+}
+
+.contact-form button:focus {
+  box-shadow: none;
+}
+
+form {
+  padding-bottom: 0.5rem;
+  padding-left: 10rem;
+}
+
+input[type='text'],
+select.form-control {
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid rgb(40, 40, 40);
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  border-radius: 0;
+  color: rgb(183, 65, 14);
+}
+
+input[type='text']:focus,
+select.form-control:focus {
+  background: transparent;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  border-bottom: 2px solid rgb(183, 65, 14);
+}
+
+input[type='number'] {
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid rgb(40, 40, 40);
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  border-radius: 0;
+  color: rgb(183, 65, 14);
+}
+
+input[type='number']:focus,
+select.form-control:focus {
+  background: transparent;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  border-bottom: 2px solid rgb(183, 65, 14);
+}
+
+#storyline {
+  border: 1px solid rgb(40, 40, 40);
+  color: rgb(183, 65, 14);
+}
+
+.form-group {
+  margin-top: 0.5rem;
+}
+
+.error {
+  color: red;
+  font-size: small;
+}

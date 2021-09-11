@@ -1,0 +1,78 @@
+/*
+Arkisto-sivun ulkoasu. Lähteinä käytetty Bootstrappia ja W3school-tutoriaaleja.
+*/
+
+html {
+  overflow: auto;
+}
+
+body {
+  color: rgb(183, 65, 14);
+  overflow-x: hidden;
+  height: 100%;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+.card {
+  width: 40%;
+  background-color: ivory;
+  margin-top: 4rem;
+  margin-left: 4rem;
+  margin-bottom: 2rem;
+}
+
+.card:hover {
+  transform: scale(1.025);
+}
+
+h2 {
+  margin-top: 1rem;
+  color: rgb(40, 40, 40);
+}
+
+td {
+  margin-top: 0.5rem;
+  color: rgb(40, 40, 40);
+}
+
+b {
+  color: rgb(183, 65, 14);
+}
+
+.card:hover button {
+  display: inline-block;
+  margin-bottom: 0.5rem;
+}
+
+.delete-button {
+  background-color: rgb(183, 65, 14);
+  color: rgb(40, 40, 40);
+  border-color: rgb(183, 65, 14);
+  margin-top: 0.5rem;
+  margin-right: 2rem;
+  margin-bottom: 0.5rem;
+  display: none;
+}
+
+.delete-button:hover {
+  background-color: rgb(40, 40, 40);
+  color: ivory;
+  border-color: rgb(40, 40, 40);
+}
+
+.edit-button {
+  background-color: rgb(183, 65, 14);
+  color: rgb(40, 40, 40);
+  border-color: rgb(183, 65, 14);
+  display: none;
+}
+
+.edit-button:hover {
+  background-color: rgb(40, 40, 40);
+  color: ivory;
+  border-color: rgb(40, 40, 40);
+}

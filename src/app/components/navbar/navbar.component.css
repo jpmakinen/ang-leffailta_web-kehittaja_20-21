@@ -1,0 +1,38 @@
+/*
+Navigointipalkin ulkoasu. Lähteinä käytetty Bootstrappia ja W3school-tutoriaaleja.
+*/
+
+html,
+body {
+  width: 100%;
+}
+
+.nav-link {
+  padding-left: 1rem;
+}
+
+button {
+  margin-left: 10px;
+}
+
+ul {
+  width: 100%;
+}
+
+nav {
+  padding-left: 1rem;
+}
+
+#signout {
+  justify-content: end;
+  margin-right: 1rem;
+}
+
+#movies {
+  padding-right: 2rem;
+}
+
+#review_a {
+  padding-right: 2rem;
+  width: 150px;
+}

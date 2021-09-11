@@ -1,0 +1,8 @@
+/*
+Yhteiset tyylit.
+*/
+html,
+body {
+  height: 100%;
+  background-image: url(../src/assets/images/movie-918655_1920.jpg);
+}

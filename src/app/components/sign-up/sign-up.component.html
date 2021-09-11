@@ -1,0 +1,43 @@
+<!--Bootstrapia apuna käyttäen luotu ulkoasu rekisteröintikomponentille-->
+
+<link href="sign-up.component.css" rel="stylesheet" />
+
+<body class="text-center">
+  <main class="form-signin">
+    <h1 class="h3 mb-3 fw-normal">Rekisteröidy</h1>
+
+    <div class="form-floating">
+      <input
+        type="email"
+        class="form-control"
+        placeholder="sähköposti"
+        #usermail
+        required
+      />
+      <label for="floatingInput">sähköposti</label>
+    </div>
+    <div class="form-floating">
+      <input
+        type="password"
+        class="form-control"
+        placeholder="salasana"
+        #userpassword
+        required
+      />
+      <label for="floatingInput">salasana</label>
+    </div>
+
+    <button
+      class="w-50 btn btn-lg btn-primary"
+      (click)="authService.signUp(usermail.value, userpassword.value)"
+    >
+      Luo tili</button
+    >&nbsp;
+    <div>
+      <p class="quest-text">
+        Onko sinulla jo tili? <a routerLink="/sign-in">Kirjaudu</a>
+      </p>
+      <p class="mt-5 mb-3 text-muted">&copy; 2020–2021</p>
+    </div>
+  </main>
+</body>

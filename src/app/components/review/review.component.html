@@ -1,0 +1,171 @@
+<!--Lomakkeen pohjana Bootstrap-malli, jota muokattu projektiin sopivaksi.-->
+
+<body>
+  <form [formGroup]="reviewForm" (ngSubmit)="onSubmit()">
+    <div class="container contact">
+      <div class="row">
+        <div class="col-md-1">
+          <div class="contact-info"></div>
+        </div>
+        <div class="col-md-9">
+          <div class="contact-form">
+            <div class="form-group">
+              <label class="control-label col-sm-3" for="userName"
+                >Tekijän nimi:</label
+              >
+              <div class="col-sm-7">
+                <input
+                  type="text"
+                  class="form-control"
+                  formControlName="userName"
+                  id="userName"
+                  placeholder="tunnus"
+                  name="userName"
+                  required
+                />
+                <p *ngIf="reviewForm.invalid" class="error">
+                  <sup>*</sup>pakollinen!
+                </p>
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="control-label col-sm-3" for="movieName"
+                >Elokuvan nimi:</label
+              >
+              <div class="col-sm-7">
+                <input
+                  type="text"
+                  class="form-control"
+                  formControlName="movieName"
+                  id="movieName"
+                  placeholder="nimi"
+                  name="movieName"
+                  required
+                />
+                <p *ngIf="reviewForm.invalid" class="error">
+                  <sup>*</sup>pakollinen!
+                </p>
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="control-label col-sm-1" for="releaseDate"
+                >Julkaisuvuosi:</label
+              >
+              <div class="col-sm-3">
+                <input
+                  type="number"
+                  class="form-control"
+                  formControlName="releaseDate"
+                  id="releaseDate"
+                  placeholder="vuosi"
+                  name="releaseDate"
+                />
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="control-label col-sm-2" for="director"
+                >Ohjaaja:</label
+              >
+              <div class="col-sm-7">
+                <input
+                  type="text"
+                  class="form-control"
+                  formControlName="director"
+                  id="director"
+                  placeholder="ohjaus"
+                  name="director"
+                />
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="control-label col-sm-2" for="starring"
+                >Pääosassa:</label
+              >
+              <div class="col-sm-7">
+                <input
+                  type="text"
+                  class="form-control"
+                  formControlName="starring"
+                  id="starring"
+                  placeholder="alkaen"
+                  name="starring"
+                />
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="control-label col-sm-3" for="length"
+                >Pituus (min):</label
+              >
+              <div class="col-sm-3">
+                <input
+                  type="number"
+                  class="form-control"
+                  formControlName="length"
+                  id="length"
+                  placeholder="minuuttia"
+                  name="length"
+                />
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="control-label col-sm-2" for="ageRating"
+                >Ikäraja:</label
+              >
+              <div class="col-sm-3">
+                <input
+                  type="number"
+                  class="form-control"
+                  formControlName="ageRating"
+                  id="ageRating"
+                  placeholder="ikä"
+                  name="ageRating"
+                />
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="control-label col-sm-2" for="score">Pisteet:</label>
+              <div class="col-sm-4">
+                <input
+                  type="number"
+                  class="form-control"
+                  formControlName="score"
+                  id="score"
+                  placeholder="pisteet 0-100"
+                  name="score"
+                  required
+                />
+                <p *ngIf="reviewForm.invalid" class="error">
+                  <sup>*</sup>pakollinen!
+                </p>
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="control-label col-sm-2" for="storyline"
+                >Juoni:</label
+              >
+              <div class="col-sm-10">
+                <textarea
+                  class="form-control"
+                  formControlName="storyline"
+                  rows="5"
+                  id="storyline"
+                ></textarea>
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="col-sm-offset-2 col-sm-10">
+                <button
+                  type="submit"
+                  class="btn btn-default"
+                  [disabled]="!reviewForm.valid"
+                >
+                  Julkaise
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </form>
+</body>
