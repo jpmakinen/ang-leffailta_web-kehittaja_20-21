@@ -19,7 +19,8 @@ Kehys responsiivisten pääasiassa mobiilisivustojen rakentamiseen.
 Googlen tukema sovellusten kehittämisohjelmisto, jonka avulla kehittäjät voivat kehittää sovelluksia eri alustoille 
 esim. Android tai iOS.
 
-Ohjeet: lataa projekti koneellesi. Lataa tarvittaessa myös node.js paketit, komennolla "npm i". Jos haluat kokeilla sovellusta, käynnistä komennolla "npm start" tai "ng serve". Sovellus aukeaa paikalliseen osoitteeseen "localhost". Halutessasi voit rakentaa sovelluksen komennolla "ng build"
+##### Ohjeet: 
+lataa projekti koneellesi. Lataa tarvittaessa myös node.js paketit, komennolla "npm i". Jos haluat kokeilla sovellusta, käynnistä komennolla "npm start" tai "ng serve". Sovellus aukeaa paikalliseen osoitteeseen "localhost". Halutessasi voit rakentaa sovelluksen komennolla "ng build"
 
 ## Reflektio ja ajankäyttö
 
